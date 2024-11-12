@@ -22,13 +22,7 @@ bool NetworkDiscovery::Init()
     // 1. Essayer de lier le socket au port NetworkPort
     // 2. Si échec, essayer les ports suivants jusqu'à succès
     // 3. Ajouter le socket au sélecteur
-if (nowMs _lastDeclareGameServerTimeMs >= DeclareGameServerDelayMs)
-		{
-			sf::Packet packet;
-				packet << MagicPacket;
-			packet << _localServerName;
-			return socket.send(packet, sf::IpAddress::Broadcast, init) 
-		}
+
     return true;
 }
 ```
